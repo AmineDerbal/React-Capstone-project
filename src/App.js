@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './routes/Home';
 import Details from './routes/Details';
 import './App.css';
+import 'animate.css';
 
 const App = () => (
   <Router>
