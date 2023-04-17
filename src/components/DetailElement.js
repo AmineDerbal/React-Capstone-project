@@ -87,7 +87,23 @@ const DetailElement = ({ details }) => {
       )}
 
       <div className="details-card">
-        <img className="detail-icon" src={details.icon} alt={details.id} />
+        <img
+          onMouseOver={(e) => {
+            e.target.style.animation = 'rotateIn 4s ';
+          }}
+          onFocus={(e) => {
+            e.preventDefault();
+          }}
+          onMouseOut={(e) => {
+            e.target.style.animation = '';
+          }}
+          onBlur={(e) => {
+            e.preventDefault();
+          }}
+          className="detail-icon"
+          src={details.icon}
+          alt={details.id}
+        />
         <h2>{details.name}</h2>
         <table style={{ fontSize: isFontSize }}>
           <tbody>
