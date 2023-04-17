@@ -37,7 +37,7 @@ const CryptoList = () => {
             if (search === '') {
               return crypto;
             }
-            if (crypto.id.toLowerCase().includes(search.toLowerCase())) {
+            if (crypto.name.toLowerCase().includes(search.toLowerCase())) {
               return crypto;
             }
             return null;
