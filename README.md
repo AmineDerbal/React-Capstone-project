@@ -72,7 +72,7 @@ We select an API that provides numeric data about a topic that we like and then 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📺 Presentation <a name="presentation"></a>
-- [ScreenRec Presentation](https://screenrec.com/share/F9vUMaPVre)
+- [ScreenRec Presentation](https://screenrec.com/share/YVLkbnjBeJ)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,8 +142,8 @@ You can deploy this project using: github pages or any host of your choice
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **responsive for all devices**
-- [ ] **adding placeholders when rockets or missions are empty**
-- [ ] **Cancel reservations from the profile section**
+- [ ] **adding additional pages**
+- [ ] **impelment animations and transitions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,7 +172,7 @@ If you like this project please give it a ⭐️.
 
 - **how will i setup this project in local machine**
 
-  - run the following command in the terminal: git clone https://github.com/AmineDerbal/react-bookstore.git
+  - run the following command in the terminal: git clone https://github.com/AmineDerbal/React-Capstone-project.git
 
 - **which code editor should i use**
 
