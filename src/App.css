@@ -24,3 +24,8 @@ header > div {
   justify-content: center;
   align-content: center;
 }
+
+.empty-cryptos {
+  text-align: center;
+  font-size: 2rem;
+}
