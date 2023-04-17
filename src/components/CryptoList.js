@@ -17,7 +17,13 @@ const CryptoList = () => {
       dispatch(getCryptosData());
     }
   }, [dispatch, isFetched]);
-  if (cryptos.length === 0) return <h2 className="empty-cryptos">No Crypto was fetched</h2>;
+  if (cryptos.length === 0) {
+    return (
+      <h2 data-testid="cryptoItem" className="empty-cryptos">
+        No Crypto was fetched
+      </h2>
+    );
+  }
   if (isLoading) return <Loader />;
   if (hasError) return <h2 className="empty-cryptos">An error has occured</h2>;
 

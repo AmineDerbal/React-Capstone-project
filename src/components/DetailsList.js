@@ -12,7 +12,13 @@ const DetailsList = () => {
   useEffect(() => {
     dispatch(getDetailsData(id));
   }, [dispatch, id]);
-  if (details.length === 0) return <h2 className="empty-cryptos">No Details</h2>;
+  if (details.length === 0) {
+    return (
+      <h2 data-testid="detailsItem" className="empty-cryptos">
+        No Details
+      </h2>
+    );
+  }
   if (isLoading) return <Loader />;
   if (hasError) return <h2 className="empty-cryptos">An error has occured</h2>;
   return <DetailElement details={details} />;
