@@ -1,0 +1,28 @@
+.details-card {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-icon {
+  width: 150px;
+  height: 150px;
+}
+
+table,
+td,
+tr {
+  border: 1px solid #15e6cd;
+}
+
+table tr {
+  background-color: #5899e2;
+}
+table tr:nth-of-type(even) {
+  background-color: #335c81;
+}
+
+table td {
+  padding: 0.5rem;
+}
