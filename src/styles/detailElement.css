@@ -83,7 +83,11 @@ table td {
 .font-size-container {
   display: flex;
   justify-content: center;
-  gap: 2rem;
   padding: 20px;
   align-items: center;
+}
+label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
