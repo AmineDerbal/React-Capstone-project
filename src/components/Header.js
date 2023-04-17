@@ -18,7 +18,7 @@ const Header = () => {
         />
         <span>2023</span>
       </div>
-      <h1>Coins States</h1>
+      <h1 style={{ animation: 'jackInTheBox 2s' }}>Coins States</h1>
       <div className="navigation-right">
         <FontAwesomeIcon icon={faMicrophone} />
       </div>
