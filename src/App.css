@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Oxygen&family=Poly&display=swap');
+
 body {
   margin: 0;
   padding: 0%;
@@ -18,6 +20,7 @@ header > div {
   padding: 0 2rem;
   gap: 0.5rem;
 }
+
 .cryptos-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -32,4 +35,32 @@ header > div {
 
 .chevron-left {
   cursor: pointer;
+}
+
+h1 {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 3rem;
+}
+.navigation-left,
+.navigation-right {
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-family: 'Poly', serif;
+}
+
+.navigation-left span {
+  font-family: 'Poly', serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation-left,
+  .navigation-right {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
 }
