@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCryptosData } from '../redux/crypto/cryptoSlice';
 import CryptoElement from './CryptoElement';
+import Loader from './Loader';
 
 const CryptoList = () => {
-  const { cryptos, isFetched } = useSelector((store) => store.crypto);
+  const {
+    cryptos, isFetched, isLoading, hasError,
+  } = useSelector((store) => store.crypto);
   const [search, setSearch] = useState('');
 
   const dispatch = useDispatch();
@@ -14,7 +17,9 @@ const CryptoList = () => {
       dispatch(getCryptosData());
     }
   }, [dispatch, isFetched]);
-  if (cryptos.length === 0) return <h2>no Crypto</h2>;
+  if (cryptos.length === 0) return <h2 className="empty-cryptos">No Crypto was fetched</h2>;
+  if (isLoading) return <Loader />;
+  if (hasError) return <h2 className="empty-cryptos">An error has occured</h2>;
 
   return (
     <div className="container">
