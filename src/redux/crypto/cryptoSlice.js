@@ -13,7 +13,6 @@ export const getCryptosData = createAsyncThunk('crypto/getAllData', async () => 
   try {
     const dataStream = await fetch(baseUrl);
     const data = await dataStream.json();
-    console.log('data', data.coins[0]);
     return data.coins;
   } catch (err) {
     return err;
