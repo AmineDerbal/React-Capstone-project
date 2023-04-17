@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
@@ -7,6 +7,13 @@ import '../styles/detailElement.css';
 const DetailElement = ({ details }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isFontSize, setIsFontSize] = useState(16);
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isOpen]);
   return (
     <div className="details-container">
       <div className="options">
