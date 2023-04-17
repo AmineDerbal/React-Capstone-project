@@ -7,6 +7,7 @@
   text-align: center;
   background-color: #5899e2;
   padding: 3rem 0;
+  cursor: pointer;
 }
 
 .crypto-card:nth-child(4n-2),
@@ -19,10 +20,17 @@
   justify-content: center;
   margin: 2rem 0;
 }
+
 .searchBar input {
   text-align: center;
   font-size: 1.5rem;
   height: 2rem;
   width: 50%;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .searchBar input {
+    font-size: 1rem;
+  }
 }
